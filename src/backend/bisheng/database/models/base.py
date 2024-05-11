@@ -20,7 +20,7 @@ def orjson_dumps(v, *, default=None, sort_keys=False, indent_2=True):
         return orjson.dumps(v, option=option).decode()
     return orjson.dumps(v, default=default, option=option).decode()
 
-
+# 基本类的配置处理
 class SQLModelSerializable(SQLModel):
 
     class Config:
